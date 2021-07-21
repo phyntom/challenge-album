@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;1,200;1,300&display=swap');
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-align: center;
+   background-color: rgb(244, 244, 244);
+   color: #333;
+}
+.round-img {
+   max-width: 50%;
+   width: 250px;
+}
+
+.nav {
+   background: #222;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+.nav a {
+   flex: 1;
+   color: white;
+   text-decoration: none;
+   margin: 0.3em 1em;
+   padding: 0.3em;
+}
+.nav a:hover {
+   color: rgb(129, 129, 129);
+   /* background: rgb(53, 53, 53);
+  text-align: center; */
+}
+
+.container {
+   margin: 0 auto;
+   max-width: 1000px;
+   padding: 40px;
+}
+
+.title-movie {
+   font-size: 4.4rem;
+   text-align: center;
+}
+
+.title-post {
+   font-size: 4.4rem;
+   text-align: center;
+}
+.small {
+   font-size: 1.5rem;
+}
+
+.form {
+   display: grid;
+}
+.label {
+   font-size: 1.2rem;
+   margin-bottom: 0.2rem;
+   text-transform: uppercase;
+}
+.input {
+   font-size: 1.6rem;
+   padding: 0.5rem 2.5rem;
+   line-height: 2rem;
+   border-radius: 20px;
+   border: 1px solid #ddd;
+   margin-bottom: 1rem;
+}
+.button {
+   background-color: rgb(0, 0, 0, 0.75);
+   color: white;
+   padding: 1rem 2rem;
+   border: 1px solid rgb(0, 0, 0, 0.75);
+   cursor: pointer;
+   border-radius: 20px;
+}
+.button:hover {
+   background-color: rgb(0, 0, 0, 0.85);
+}
+
+.card-list {
+   margin-top: 2rem;
+   display: grid;
+}
+.card {
+   padding: 2rem 4rem;
+   border-radius: 10px;
+   box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.25);
+   margin-bottom: 1.5rem;
+   background-color: white;
+}
+.card-content {
+   text-align: left;
+}
+.card-img {
+   margin: 0 auto;
+   display: block;
+}
+.card-title {
+   margin-bottom: 0.5rem;
+   font-size: 1.4rem;
+   text-align: center;
+}
+
+@media only screen and (min-width: 786px) {
+   .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background: #222;
+      padding: 2.2rem 3rem;
+   }
+   .log {
+      flex-basis: 50%;
+   }
+   .nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-basis: 50%;
+   }
+   .nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0.25em;
+      padding: 0.3em;
+   }
+   .nav a:hover {
+      color: rgb(129, 129, 129);
+      background: rgb(53, 53, 53);
+      width: 100%;
+      text-align: center;
+   }
+   .form {
+      grid-template-columns: auto 1fr auto;
+      grid-gap: 1rem;
+      justify-content: center;
+      align-items: center;
+   }
+   .input {
+      margin-bottom: 0;
+   }
+   .card-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+   }
+   .card-desc {
+      font-size: 0.8rem;
+   }
+}
