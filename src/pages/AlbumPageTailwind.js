@@ -39,16 +39,16 @@ export default function AlbumPageTailwind(props) {
                <input
                   type='text'
                   name='query'
-                  placeholder='Search by Id'
+                  placeholder='Search by Id . . .'
                   onChange={handleInputChange}
                   value={albumId}
                   className='block w-full px-3 py-2 focus:bg-transparent bg-transparent ring-transparent placeholder-gray-500 text-gray-900 focus:outline-none'
                />
                <button
                   type='submit'
-                  className='bg-indigo-500 rounded-full mx-5 px-6 text-center text-gray-100'
+                  className='bg-indigo-500 block text-sm font-light rounded-full mx-5 px-6 w-80 text-center text-gray-100'
                >
-                  Submit
+                  Get Album Photos By Id
                </button>
             </form>
          </div>

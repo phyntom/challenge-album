@@ -12,7 +12,7 @@ export default function SearchForm(props) {
                onChange={props.handleChange}
                value={props.value}
             />
-            <Button type='submit' displayText='Search' />
+            <Button type='submit' displayText='Get Album Photos By Id' />
          </form>
       </div>
    );
