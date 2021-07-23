@@ -11,15 +11,15 @@ export default function NavigationBar() {
                         <div className='flex space-x-4'>
                            <Link
                               to='home'
-                              className='bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium'
+                              className='bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium uppercase'
                            >
-                              Without Tailwind
+                              custom CSS
                            </Link>
                            <Link
                               to='/withTailwind'
-                              className='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
+                              className='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium uppercase'
                            >
-                              Tailwindcss
+                              tailwindcss
                            </Link>
                         </div>
                      </div>
@@ -32,8 +32,12 @@ export default function NavigationBar() {
       return (
          <div className='header'>
             <nav className='nav'>
-               <Link to='/home'>Home</Link>
-               <Link to='/withTailwind'>Using Tailwindcss</Link>
+               <Link to='/home' className='uppercase'>
+                  Custom CSS
+               </Link>
+               <Link to='/withTailwind' className='uppercase'>
+                  Tailwindcss
+               </Link>
             </nav>
          </div>
       );

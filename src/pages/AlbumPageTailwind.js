@@ -42,7 +42,7 @@ export default function AlbumPageTailwind(props) {
                   placeholder='Search by Id'
                   onChange={handleInputChange}
                   value={albumId}
-                  className='block w-full px-3 py-2 focus:bg-transparent bg-transparent placeholder-gray-500 text-gray-900 focus:outline-none'
+                  className='block w-full px-3 py-2 focus:bg-transparent bg-transparent ring-transparent placeholder-gray-500 text-gray-900 focus:outline-none'
                />
                <button
                   type='submit'
