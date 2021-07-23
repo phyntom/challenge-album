@@ -30,7 +30,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Deployment
+## Deployment
 
 The project is deployed on Netlify using netlify-cli tool
 
@@ -39,3 +39,9 @@ The project is deployed on Netlify using netlify-cli tool
 This command installs the netlify-cli utility tool globally
 
 #### `netlify deploy`
+
+This command is used to deploy draft site but it does not deploy in production.
+
+#### `netlify deploy --prod`
+
+This command is used to deploy the site or react app in production environment.
