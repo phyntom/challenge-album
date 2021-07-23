@@ -2,16 +2,17 @@ import Button from './Button';
 export default function SearchForm(props) {
    return (
       <div>
-         <form className='form'>
+         <form className='form' onSubmit={props.handleSubmit}>
             <label className='label' htmlFor='query'></label>
             <input
                className='input'
                type='text'
                name='query'
-               placeholder='i.e. 1'
-               onChange={(event) => props.onChange(event)}
+               placeholder='Search by Id'
+               onChange={props.handleChange}
+               value={props.value}
             />
-            <Button type='button' displayText='Search' />
+            <Button type='submit' displayText='Search' />
          </form>
       </div>
    );

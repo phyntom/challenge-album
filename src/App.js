@@ -2,7 +2,7 @@ import NavigationBar from './components/NavigationBar';
 import './styles.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import Albums from './pages/Albums';
+import Albums from './pages/AlbumsPage';
 export default function App() {
    return (
       <div>
