@@ -10,6 +10,7 @@ export default function App() {
       <div>
          <NavigationBar />
          <Switch>
+            <Route exact path={'/'} component={Albums} />
             <Route path={'/home'} component={Albums} />
             <Route path={'/withTailwind'} component={AlbumPageTailwind} />
          </Switch>
