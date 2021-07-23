@@ -2,7 +2,7 @@ import React from 'react';
 import AlbumCard from './AlbumCard';
 
 export default function AlbumList(props) {
-   const { albumPhotos, itemsPerPage } = props;
+   const { albumPhotos } = props;
    return (
       <div className='card-list'>
          {albumPhotos.map((albumPhoto) => (
