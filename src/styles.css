@@ -125,10 +125,7 @@ body {
    margin-top: 0.5rem;
    text-align: left;
 }
-.card-img {
-   margin: 0 auto;
-   display: block;
-}
+
 .card-title {
    margin-bottom: 0.5rem;
    font-size: 1.4rem;
